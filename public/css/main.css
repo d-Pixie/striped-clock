@@ -91,19 +91,67 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
 body {
 	background-color: #000;
 	font-size: 3em;
 	color: #ddd;
 	font-family: "Special Elite";
+    -moz-perspective: 500px;
+    -moz-transform-style: preserve-3d;
+    -moz-perspective-origin: 50% 50%;
+    -webkit-perspective: 500px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective-origin: 50% 50%;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    perspective-origin: 50% 50%;
 }
 
-.time { text-align: center; }
+.center-center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-box-align: center;
+    box-align: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-box-pack: center;
+    box-pack: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+}
 
-section > div {
+hr {
+    position: absolute;
+    top: 50%;
+    border-top: 1px solid rgb(85, 85, 85);
+    width: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid rgb(85, 85, 85);
+    background: rgb(136, 136, 136);
+}
+
+section {
+    white-space: nowrap;
+    height: 1em;
+}
+
+section div {
 	display: inline-block;
 	position: relative;
-	border: 1px solid #500;
 	height: 1em;
 }
 
@@ -117,12 +165,34 @@ ul {
 	transition-timing-function: ease;
 	-webkit-transition: top 500ms;
 	transition: top 25ms;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(85, 85, 85);
+    padding: 0 10px;
 }
 
 li {
 	line-height: 1em;
 	top: 0.15em;
 	position: relative;
+}
+
+.day {
+    margin-right: 2em;
+}
+
+.colon span {
+    position: relative;
+    top: -10px;
+}
+
+.second .one-perspective {
+    -webkit-transform: rotate3d(-5, -5, 0.5, 25deg);
+    transform: rotate3d(-5, -5, 0.5, 25deg);
+}
+
+.second .ten-perspective {
+    -webkit-transform: rotate3d(2, -2, 0.1, 25deg);
+    transform: rotate3d(2, -2, 0.1, 25deg);
 }
 
 /* ==========================================================================
