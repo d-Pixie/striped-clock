@@ -99,7 +99,7 @@ html, body {
 body {
 	background-color: #000;
 	font-size: 3em;
-	color: #ddd;
+	color: #888;
 	font-family: "Special Elite";
     -moz-perspective: 500px;
     -moz-transform-style: preserve-3d;
@@ -110,6 +110,10 @@ body {
     perspective: 500px;
     transform-style: preserve-3d;
     perspective-origin: 50% 50%;
+}
+
+.bing {
+    color: #ddd;
 }
 
 .center-center {
@@ -136,12 +140,13 @@ hr {
     position: absolute;
     top: 50%;
     border-top: 1px solid rgb(85, 85, 85);
-    width: 100%;
-    left: 0;
+    width: 120%;
+    left: -10%;
     padding: 0;
-    margin: 0;
+    margin: 2px 0 0 0;
     border-bottom: 1px solid rgb(85, 85, 85);
-    background: rgb(136, 136, 136);
+    background: #ddd;
+    -webkit-transform: translateZ(-20px);
 }
 
 section {
@@ -159,7 +164,6 @@ ul {
 	position: relative;
 	float:left;
 	list-style-type: none;
-	padding: 0;
 	margin: 0;
 	-webkit-transition-timing-function: ease;
 	transition-timing-function: ease;
@@ -167,7 +171,7 @@ ul {
 	transition: top 25ms;
     background-color: rgb(0, 0, 0);
     border: 1px solid rgb(85, 85, 85);
-    padding: 0 10px;
+    padding: 0 10px 10px 10px;
 }
 
 li {
@@ -183,15 +187,36 @@ li {
 .colon span {
     position: relative;
     top: -10px;
+    color: #ddd;
 }
 
-.second .one-perspective {
-    -webkit-transform: rotate3d(-5, -5, 0.5, 25deg);
+.perspective-one {
+    -webkit-transform: rotate3d(-1, -1, -1, 5deg);
     transform: rotate3d(-5, -5, 0.5, 25deg);
 }
 
-.second .ten-perspective {
-    -webkit-transform: rotate3d(2, -2, 0.1, 25deg);
+.perspective-two {
+    -webkit-transform: rotate3d(0.1, 1, 0, -5deg)
+    transform: rotate3d(0, 1, -0.1, 25deg);
+}
+
+.perspective-three {
+    -webkit-transform: rotate3d(2, 1, 2, 10deg);
+    transform: rotate3d(2, -2, 0.1, 25deg);
+}
+
+.perspective-four {
+    -webkit-transform: rotate3d(-1, 1, -1, -5deg);
+    transform: rotate3d(-2, 2, 0.1, 15deg);
+}
+
+.perspective-five {
+    -webkit-transform: rotate3d(0, 1, 0, -15deg);
+    transform: rotate3d(0, 1, -0.1, 25deg);
+}
+
+.perspective-six {
+    -webkit-transform: rotate3d(2, 1, 2, 5deg);
     transform: rotate3d(2, -2, 0.1, 25deg);
 }
 

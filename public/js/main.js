@@ -12,6 +12,7 @@
   Clock.prototype.display = function( tick ){
 		if( tick ){ this.now.add( 'seconds', 1 ); }
 
+    $('.bing').removeClass('bing');
 
 
     var year, year_one, year_ten, year_hundred, year_thousands;
@@ -22,9 +23,13 @@
     year_thousands = 9 - ( Math.floor( year / 1000 ) % 10 );
 
     $('.year .thousand').css('top', '-'+year_thousands+'em');
+    $($('.year .thousand li').get( year_thousands )).addClass('bing');
     $('.year .hundred').css('top', '-'+year_hundred+'em');
+    $($('.year .hundred li').get( year_hundred )).addClass('bing');
     $('.year .ten').css('top', '-'+year_ten+'em');
+    $($('.year .ten li').get( year_ten )).addClass('bing');
     $('.year .one').css('top', '-'+year_one+'em');
+    $($('.year .one li').get( year_one )).addClass('bing');
 
 
 
@@ -32,6 +37,8 @@
     month = this.now.month();
 
     $('.month').css('top', '-'+month+'em');
+    $($('.month li').get( month )).addClass('bing');
+
 
 
 
@@ -41,17 +48,21 @@
     day_ten = 3 - ( Math.floor( day / 10 ));
 
     $('.day .ten').css('top', '-'+day_ten+'em');
+    $($('.day .ten li').get( day_ten )).addClass('bing');
     $('.day .one').css('top', '-'+day_one+'em');
+    $($('.day .one li').get( day_one )).addClass('bing');
 
 
 
     var hours, hour_one, hour_ten;
     hours = this.now.hours();
-    min_one = 9 - ( hours % 10 );
-    min_ten = 2 - ( Math.floor( hours / 10 ));
+    hour_one = 9 - ( hours % 10 );
+    hour_ten = 2 - ( Math.floor( hours / 10 ));
 
-    $('.hour .ten').css('top', '-'+min_ten+'em');
-    $('.hour .one').css('top', '-'+min_one+'em');
+    $('.hour .ten').css('top', '-'+hour_ten+'em');
+    $($('.hour .ten li').get( hour_ten )).addClass('bing');
+    $('.hour .one').css('top', '-'+hour_one+'em');
+    $($('.hour .one li').get( hour_one )).addClass('bing');
 
 
 
@@ -61,7 +72,9 @@
     min_ten = 5 - ( Math.floor( mins / 10 ));
 
     $('.minute .ten').css('top', '-'+min_ten+'em');
+    $($('.minute .ten li').get( min_ten )).addClass('bing');
     $('.minute .one').css('top', '-'+min_one+'em');
+    $($('.minute .one li').get( min_one )).addClass('bing');
 
 
 
@@ -71,7 +84,9 @@
 		sec_ten = 5 - ( Math.floor( secs / 10 ));
 
 		$('.second .ten').css('top', '-'+sec_ten+'em');
+    $($('.second .ten li').get( sec_ten )).addClass('bing');
 		$('.second .one').css('top', '-'+sec_one+'em');
+    $($('.second .one li').get( sec_one )).addClass('bing');
   };
 
   var Timer = function( output ){
