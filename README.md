@@ -36,7 +36,7 @@ Better visuals.
 
 ## Inspiration
 
-This screensaver is based on a old Windows screensaver I hade. I can not remember the name of that one, but the whole idea with the strips comes from there.
+This screensaver is based on a old Windows screensaver I had. I can not remember the name of that one, but the whole idea with the strips comes from there.
 
 If you know which one I'm talking about please leave a note in some way so I can credit the original author :)
 
@@ -44,8 +44,8 @@ If you know which one I'm talking about please leave a note in some way so I can
 
 This little toy project was built during a coffee break, a buss ride and two episodes of Grey's anatomy. That would probably not have been possible without these projects and the work that other people did so I didn't have to:
 
-Moment.js - Premiere time and date library. http://momentjs.com/
-jQuery - You all know what it does ... http://jquery.com/
-h5bp - HTML5 Boilerplate. https://github.com/h5bp/html5-boilerplate
-Underscore.js - Excellent utilities library. http://underscorejs.com/
-Google fonts - Your one stop shop for web fonts. http://www.google.com/fonts/
+  * Moment.js - Premiere time and date library. http://momentjs.com/
+  * jQuery - You all know what it does ... http://jquery.com/
+  * h5bp - HTML5 Boilerplate. https://github.com/h5bp/html5-boilerplate
+  * Underscore.js - Excellent utilities library. http://underscorejs.com/
+  * Google fonts - Your one stop shop for web fonts. http://www.google.com/fonts/
