@@ -47,5 +47,5 @@ This little toy project was built during a coffee break, a buss ride and two epi
   * Moment.js - Premiere time and date library. http://momentjs.com/
   * jQuery - You all know what it does ... http://jquery.com/
   * h5bp - HTML5 Boilerplate. https://github.com/h5bp/html5-boilerplate
-  * Underscore.js - Excellent utilities library. http://underscorejs.com/
+  * Underscore.js - Excellent utilities library. http://underscorejs.org/
   * Google fonts - Your one stop shop for web fonts. http://www.google.com/fonts/
