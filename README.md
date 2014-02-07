@@ -33,6 +33,7 @@ Pauses updates when tab or window is hidden (not really relevant for screensaver
 
 Manifest for offline use without the need of a local server.
 Better visuals.
+Refactored code :)
 
 ## Inspiration
 
