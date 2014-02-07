@@ -111,6 +111,7 @@ body {
     perspective: 500px;
     transform-style: preserve-3d;
     perspective-origin: 50% 50%;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .bing {

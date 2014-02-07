@@ -1,64 +1,51 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+# Striped Clock
 
-HTML5 Boilerplate is a professional front-end template for building fast,
-robust, and adaptable web apps or sites.
+This is a simple HTML5 app that shows the current date and time in an unusual fashion.
 
-This project is the product of many years of iterative development and combined
-community knowledge. It does not impose a specific development philosophy or
-framework, so you're free to architect your code in the way that you want.
-
-* Source: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
-* Homepage: [http://html5boilerplate.com](http://html5boilerplate.com)
-* Twitter: [@h5bp](http://twitter.com/h5bp)
-
+To see it in action head over to the Github page at http://d-pixie.github.io/striped-clock/
 
 ## Quick start
 
-Choose one of the following options:
+You can of course use this as a normal web page, it's rather pretty, but it's meant to be used as a screensaver. To do that you need some additional software.
 
-1. Download the latest stable release from
-   [html5boilerplate.com](http://html5boilerplate.com/) or a custom build from
-   [Initializr](http://www.initializr.com).
-2. Clone the git repo — `git clone
-   https://github.com/h5bp/html5-boilerplate.git` - and checkout the [tagged
-   release](https://github.com/h5bp/html5-boilerplate/releases) you'd like to
-   use.
+### OS X
 
+For OS X there is this nifty little screensaver called WebSaver that simply takes a URL and uses that page as your screensaver by putting it in a full screen chromium window.
+
+Head over to https://websaver.googlecode.com/files/websaver-2.5.dmg and grab a copy. Install it and point it at the github pages url above or clone the proejct and run it locally with Pow (http://pow.cx/), just symlink the directory where you cloned the repo to ~/.pow/clock and go to http://clock.dev/ in your browser to run a local copy.
+
+### Windows
+
+There is a simmilar screensaver for windows called web-page-screensaver that you can downlaod at https://web-page-screensaver.googlecode.com/files/Web-Page-Screensaver.scr and place in your `system32` directory. It's XP only though and seeing since that is dying out there is another option.
+
+E-motional has a shareware program called Auto web view that you can get at http://www.e-motional.com/autowebview.htm ... It works for XP and Windows 7 at least, but I'm not sure what restrictions is placed on the unregistered version (and registering it is $20 so that won't happen :)).
+
+Any tips on a good alternative here is appreciated.
 
 ## Features
 
-* HTML5 ready. Use the new elements with confidence.
-* Cross-browser compatible (Chrome, Firefox, IE8+, Opera, Safari).
-* Designed with progressive enhancement in mind.
-* Includes [Normalize.css](http://necolas.github.com/normalize.css/) for CSS
-  normalizations and common bug fixes.
-* The latest [jQuery](http://jquery.com/) via CDN, with a local fallback.
-* The latest [Modernizr](http://modernizr.com/) build for feature detection.
-* Placeholder CSS Media Queries.
-* Useful CSS helpers.
-* Default print CSS, performance optimized.
-* Protection against any stray `console.log` causing JavaScript errors in
-  older browsers.
-* An optimized Google Analytics snippet.
-* Apache server caching, compression, and other configuration defaults for
-  Grade-A performance.
-* Cross-domain Ajax and Flash.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
+### Current
 
-[HTML5 Boilerplate v4 provides legacy browser
-support](https://github.com/h5bp/html5-boilerplate/tree/v4) (IE 6+, Firefox
-3.6+, Safari 4+), but is no longer actively developed.
+Shows time and date in an interesting manner.
+Pauses updates when tab or window is hidden (not really relevant for screensaver use).
 
-## Documentation
+### Comming
 
-Take a look at the [documentation table of contents](doc/TOC.md). This
-documentation is bundled with the project, which makes it readily available for
-offline reading and provides a useful starting point for any documentation you
-want to write about your project.
+Manifest for offline use without the need of a local server.
+Better visuals.
 
+## Inspiration
 
-## Contributing
+This screensaver is based on a old Windows screensaver I hade. I can not remember the name of that one, but the whole idea with the strips comes from there.
 
-Anyone and everyone is welcome to [contribute](CONTRIBUTING.md). Hundreds of
-developers have helped make the HTML5 Boilerplate what it is today.
+If you know which one I'm talking about please leave a note in some way so I can credit the original author :)
+
+## Props
+
+This little toy project was built during a coffee break, a buss ride and two episodes of Grey's anatomy. That would probably not have been possible without these projects and the work that other people did so I didn't have to:
+
+Moment.js - Premiere time and date library. http://momentjs.com/
+jQuery - You all know what it does ... http://jquery.com/
+h5bp - HTML5 Boilerplate. https://github.com/h5bp/html5-boilerplate
+Underscore.js - Excellent utilities library. http://underscorejs.com/
+Google fonts - Your one stop shop for web fonts. http://www.google.com/fonts/
