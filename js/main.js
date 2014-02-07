@@ -101,7 +101,7 @@
 
     this.elapsed = Math.floor(this.time / 100) / 10;
 
-    if( this.elapsed === Math.round( this.elapsed )){
+    if( this.elapsed === Math.round( this.elapsed ) && !window.hidden ){
 			this.output.display( this.elapsed );
     }
 
