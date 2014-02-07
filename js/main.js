@@ -113,6 +113,10 @@
 		window.setTimeout(_.bind(this.tick,this), 100);
 	};
 
+  if( window.location.host == "d-pixie.github.io" ){
+    $('.fork-me').fadeIn();
+  }
+
   var clock, timer;
   clock = new Clock();
   clock.display();
