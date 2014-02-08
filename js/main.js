@@ -117,7 +117,14 @@
     $('.fork-me').fadeIn();
   }
 
-  var clock, timer;
+  var hash, clock, timer;
+
+  hash = window.location.hash;
+
+  if( hash === "#simple" ){
+    $('[class^="perspective"]').each(function(i,e){ $(e).removeClass($(e).prop('class')) });
+  }
+
   clock = new Clock();
   clock.display();
   timer = new Timer( clock );
